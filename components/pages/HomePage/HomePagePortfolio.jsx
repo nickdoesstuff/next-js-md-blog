@@ -131,16 +131,20 @@ const HomePagePortfolio = () => {
         </div>
         <div className="row mb-5">
           <div className="col text-center">
-            <a href="#" className="btn btn-outline-primary">
-              See Full Portfolio
-            </a>
+            <Link href="/portfolio">
+              <a className="btn btn-outline-primary">See Full Portfolio</a>
+            </Link>
           </div>
         </div>
         <div className="row">
           <div className="col text-center">
             <p className="subtitle">
               Looking for something specific?{" "}
-              <a href="mailto:nickshelton1376@gmail.com" target="_blank">
+              <a
+                href="mailto:nickshelton1376@gmail.com"
+                target="_blank"
+                style={{ whiteSpace: "nowrap" }}
+              >
                 Email me.
               </a>
             </p>

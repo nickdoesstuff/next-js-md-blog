@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HomePageBlogSection = () => {
   return (
     <section id="HomePage-blog" className="container-fluid mb-5 pb-5">
@@ -11,9 +13,9 @@ const HomePageBlogSection = () => {
               I’ve created/written a lot over the years, I’m pruning the tree,
               and will add old and new posts soon. Check back soon!
             </p>
-            <a href="#" className="btn btn-outline-primary">
-              Read Blog
-            </a>
+            <Link href="/blog">
+              <a className="btn btn-outline-primary">Read Blog</a>
+            </Link>
           </div>
         </div>
       </div>

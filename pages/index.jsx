@@ -10,7 +10,9 @@ import HomePageConferencePresentations from "../components/pages/HomePage/HomePa
 import HomePageBlogSection from "../components/pages/HomePage/HomePageBlogSection";
 import HomePageProjectCTA from "../components/pages/HomePage/HomePageProjectCTA";
 
-export default function Home() {
+import { getPortfolioItems } from "../lib/portfolio";
+
+export default function Home({ portfolioItems }) {
   return (
     <>
       <Head>
@@ -36,7 +38,7 @@ export default function Home() {
       <HomePageSkills />
 
       {/* portfolio & cards */}
-      <HomePagePortfolio />
+      <HomePagePortfolio portfolioItems={portfolioItems} />
 
       {/* Presentation, spacer div + cards */}
       <HomePageConferencePresentations />
@@ -48,4 +50,13 @@ export default function Home() {
       <HomePageProjectCTA />
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  const portfolioItems = getPortfolioItems("home");
+  return {
+    props: {
+      portfolioItems,
+    },
+  };
 }

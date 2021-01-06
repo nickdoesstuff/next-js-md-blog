@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-0242ac130002",
+        "title": "Dormakaba Market Masters",
+        "description": "Mobile-first responsive game built to give dormakaba employees training on new branding nomeclature.",
+        "bgImage": "/images/pages/portfolio/dormakaba_bg.jpg",
+        "image": "/images/pages/portfolio/logos/dormakaba_white_red.png",
+        "href": "/portfolio",
+        "tags": ["home"]
+    },
+    
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-asf23423434",
+        "title": "Lilly Marketing Studios",
+        "description": "DESCRIPTION",
+        "bgImage": "/images/pages/portfolio/lilly_bg.jpg",
+        "image": "/images/pages/portfolio/logos/lilly_white.png",
+        "color": "#C61425",
+        "href": "/portfolio",
+        "tags": ["home"]
+    },
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-9873hoasdfas",
+        "title": "Leadership Training App",
+        "description": "DESCRIPTION",
+        "bgImage": "/images/pages/portfolio/spectrum_bg.jpg",
+        "image": "/images/pages/portfolio/logos/spectrum_white.png",
+        "color": "#17A2B8",
+        "href": "/portfolio",
+        "tags": ["home"]
+    },
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-2342397afsdf",
+        "title": "TITLE",
+        "description": "DESCRIPTION",
+        "bgImage": "/images/pages/portfolio/cummins_bg.jpg",
+        "image": "/images/pages/portfolio/logos/cummins_white.png",
+        "color": "#C31627",
+        "href": "/portfolio",
+        "tags": ["home"]
+    },
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-234asfas087",
+        "title": "TITLE",
+        "description": "DESCRIPTION",
+        "bgImage": "/images/pages/portfolio/jh_bg.jpg",
+        "image": "/images/pages/portfolio/logos/johns_hopkins_white.png",
+        "color": "#FFC107",
+        "href": "/portfolio",
+        "tags": ["home"]
+    },
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-2342397asdf",
+        "title": "TITLE",
+        "description": "DESCRIPTION",
+        "bgImage": "/images/pages/portfolio/roche_bg.jpg",
+        "image": "/images/pages/portfolio/logos/roche_white.png",
+        "color": "#2B81DD",
+        "href": "/portfolio",
+        "tags": ["home"]
+    }
+]

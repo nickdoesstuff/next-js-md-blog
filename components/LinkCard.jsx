@@ -1,8 +1,12 @@
 import React from "react";
 
+import Link from "next/link";
+
 import GlassesLogo from "../components/logos/GlassesLogo";
 
-const LinkCard = (props) => {
+const LinkCard = ({ card }) => {
+  const linkText = "Check it out";
+
   // Adjust inline styles on hover
   const [isHovered, setIsHovered] = React.useState(false);
   const onHover = () => setIsHovered(true);
@@ -13,8 +17,10 @@ const LinkCard = (props) => {
     color = "#0E3982",
     bgImage = "/images/pages/portfolio/portfolio_default.jpg",
     image = null,
-    title = "Dormakaba Market Masters",
-  } = props;
+    title = "Title",
+    description = "Description",
+    href = "/",
+  } = card;
 
   const cardColor = isHovered ? "#141c3a" : color;
 
@@ -36,7 +42,16 @@ const LinkCard = (props) => {
           {!image && <GlassesLogo scale={1.4} />}
           {image && <img src={image} alt="" />}
         </div>
-        <div className="contentContainer">{props.children}</div>
+        <div className="contentContainer">
+          <h5 className="bg-light text-dark px-2 rounded">{title}</h5>
+          <div className="row">{description}</div>
+
+          <Link href={href}>
+            <a className="btn btn-sm btn-outline-dark text-white border border-white">
+              {linkText}
+            </a>
+          </Link>
+        </div>
       </div>
     </div>
   );

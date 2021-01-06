@@ -1,0 +1,33 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Heebo, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 185px;
+}
+
+.AnimatedPageWrapper {
+  padding-top: 65px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .container-fluid {
+    max-width: 1280px;
+  }
+}
+
+@import "./Pages/HomePage.scss";

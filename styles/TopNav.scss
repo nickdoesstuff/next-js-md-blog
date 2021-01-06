@@ -1,50 +1,158 @@
 .TopNav {
   z-index: 2;
   background: rgba($white, 0.95);
-  color: #6c757d;
-  backdrop-filter: blur(6px);
 
-  li.nav-item {
-    a {
-      color: #6c757d;
-      font-size: 16px;
-      font-weight: 500;
-      margin: 0 10px;
+  .TopNav-links {
+    ul {
+      box-shadow: 0 0 20px rgba($dark, 0.5);
+      z-index: 2;
+      transform: translateX(105%);
+      background: $primary;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease-out;
 
-      transition: all 0.3s;
+      li.nav-item {
+        border-bottom: 1px solid darken($primary, 8%);
+        a {
+          padding: 30px 16px 30px 40px;
+          background: darken($primary, 2%);
+          margin: 0;
+          color: #fff;
+          font-size: 24px;
+          font-weight: 100;
+          border-radius: 0;
+          border: none;
+          width: 100%;
+          transition: all 0.3s;
+          text-align: left;
 
-      &:hover {
-        color: $primary;
+          &:hover {
+            background: darken($primary, 30%);
+          }
+        }
+
+        &.active {
+          a {
+            background: darken($primary, 20%);
+            color: $white;
+            font-weight: 800;
+          }
+        }
       }
     }
+  }
 
-    &.active a {
-      color: $primary;
-      font-weight: 800;
+  &.is-open {
+    ul {
+      transform: translateX(0);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: rgba($white, 0.95);
+    backdrop-filter: blur(6px);
+    color: #6c757d;
+
+    .TopNav-links {
+      ul {
+        box-shadow: none;
+        transform: none;
+        position: relative;
+        width: auto;
+        height: auto;
+        background: $white;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        li.nav-item {
+          border: none;
+          a {
+            font-weight: 500;
+            font-size: 16px;
+            padding: 0 10px;
+            background: none;
+            color: #6c757d;
+            &:hover {
+              color: $primary;
+              background: none;
+            }
+
+            &.btn {
+              border-radius: $border-radius;
+              background: $primary;
+              text-align: center;
+              padding: 8px 8px;
+              color: #fff;
+              margin-left: 1em;
+
+              &:hover {
+                background: darken($primary, 10%);
+              }
+            }
+          }
+
+          &.active a {
+            background: none;
+            color: $primary;
+            font-weight: 800;
+          }
+        }
+      }
     }
   }
 }
 
-.navbar.transparent.navbar-inverse .navbar-inner {
-  border-width: 0px;
-  -webkit-box-shadow: 0px 0px;
-  box-shadow: 0px 0px;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: -webkit-gradient(
-    linear,
-    50% 0%,
-    50% 100%,
-    color-stop(0%, rgba(0, 0, 0, 0)),
-    color-stop(100%, rgba(0, 0, 0, 0))
-  );
-  background-image: -webkit-linear-gradient(
-    270deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+.TopNav-overlay {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-105%);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $dark;
+  transition: opacity 0.3s ease-out;
+}
+
+.TopNav-hamburger {
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 39px;
+
+  i {
+    color: $primary;
+    background: $white;
+    padding: 8px;
+    border: 1px solid $primary;
+    border-radius: $border-radius;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    i {
+      color: $white;
+      background: $primary;
+    }
+  }
+}
+
+.TopNav.is-open .TopNav-overlay {
+  opacity: 0.7;
+  transform: translateY(0);
 }

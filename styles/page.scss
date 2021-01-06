@@ -6,12 +6,15 @@ body {
     Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-
-  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   padding-top: 185px;
+}
+
+body.nav-open {
+  overflow-y: hidden;
 }
 
 .AnimatedPageWrapper {

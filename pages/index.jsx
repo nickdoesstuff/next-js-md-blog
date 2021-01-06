@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Hire Nick - Passonate Software Dev &amp; UX Junkie</title>
+        <title>Nick Does Stuff</title>
         <meta
           name="description"
           content="Hi, I'm Nick - I design and code experiences that users ❤. I'm currently looking for a long term relationship with a great company. Until then, I'm happy to mingle if you have an exciting or challenging project and need a nerd on your team."

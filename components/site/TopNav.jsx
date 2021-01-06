@@ -1,26 +1,44 @@
 import Link from "next/link";
 import GlassesLogo from "../logos/GlassesLogo";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 const TopNav = () => {
+  const { pathname } = useRouter();
+
+  const [page, setPage] = useState("home");
+
+  useEffect(() => {
+    if (pathname.includes("/blog")) {
+      setPage("blog");
+    } else if (pathname.includes("/portfolio")) {
+      setPage("portfolio");
+    } else {
+      setPage("home");
+    }
+  }, [pathname]);
+
   return (
-    <nav className="TopNav navbar bg-white navbar-inverse navbar-expand fixed-top shadow-sm">
+    <nav className="TopNav navbar navbar-inverse navbar-expand fixed-top shadow-sm">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          <GlassesLogo />
-        </a>
+        <Link href="/">
+          <a className="navbar-brand">
+            <GlassesLogo />
+          </a>
+        </Link>
         <div className="ml-auto">
           <ul className="navbar-nav">
-            <li className="nav-item active">
+            <li className={`nav-item ${page === "home" ? "active" : ""}`}>
               <Link href="/">
                 <a className="nav-link">About</a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className={`nav-item ${page === "portfolio" ? "active" : ""}`}>
               <Link href="/portfolio">
                 <a className="nav-link">Portfolio</a>
               </Link>
             </li>
-            <li className="nav-item">
+            <li className={`nav-item ${page === "blog" ? "active" : ""}`}>
               <Link href="/blog">
                 <a className="nav-link">Blog</a>
               </Link>

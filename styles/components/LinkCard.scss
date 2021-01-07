@@ -1,7 +1,9 @@
 @import "../variables";
 
 .LinkCard {
-  margin-bottom: 2em;
+  margin: 0 auto 2em auto;
+  cursor: pointer;
+  max-width: 450px;
 
   .card {
     position: relative;
@@ -57,13 +59,23 @@
       align-items: center;
       justify-content: space-around;
       transform: translateY(100%);
-      transition: all 0.3s ease-in-out;
-      transition-delay: 0.2s;
+      transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      // transition-delay: 0.2s;
       padding: 8px 18px;
 
       .row {
+        color: $white;
         font-size: 16px;
         padding: 0 10px;
+      }
+
+      .LinkCard-clickText::before {
+        content: "- Click to check it out -";
+        font-size: 12px;
+
+        @media (max-width: 575.98px) {
+          content: "- Tap to check it out -";
+        }
       }
     }
   }

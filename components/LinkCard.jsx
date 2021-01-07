@@ -5,8 +5,6 @@ import Link from "next/link";
 import GlassesLogo from "../components/logos/GlassesLogo";
 
 const LinkCard = ({ card }) => {
-  const linkText = "Check it out";
-
   // Adjust inline styles on hover
   const [isHovered, setIsHovered] = React.useState(false);
   const onHover = () => setIsHovered(true);
@@ -42,16 +40,16 @@ const LinkCard = ({ card }) => {
           {!image && <GlassesLogo scale={1.4} />}
           {image && <img src={image} alt="" />}
         </div>
-        <div className="contentContainer">
-          <h5 className="bg-light text-dark px-2 rounded">{title}</h5>
-          <div className="row">{description}</div>
+        <Link href={href}>
+          <a>
+            <div className="contentContainer">
+              <h5 className="bg-light text-dark px-2 rounded">{title}</h5>
+              <div className="row">{description}</div>
 
-          <Link href={href}>
-            <a className="btn btn-sm btn-outline-dark text-white border border-white">
-              {linkText}
-            </a>
-          </Link>
-        </div>
+              <span className="LinkCard-clickText text-white"></span>
+            </div>
+          </a>
+        </Link>
       </div>
     </div>
   );

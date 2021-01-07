@@ -1,21 +1,47 @@
-#bottom-cloud-container {
-  margin-top: 200px;
+#TopClouds {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 330px;
+  margin-top: -22px;
+  background: url("/images/pages/home/TopClouds.svg") top center no-repeat;
 }
 
+#HomePage-hero {
+  padding-top: 20px;
+  @media (max-width: 575.98px) {
+    padding-top: 0;
+    max-height: 240px;
+    h1 {
+      font-size: 42px;
+
+      span {
+        // display: block;
+      }
+    }
+  }
+}
 #bottom-cloud-container {
   height: 200px;
+  margin-top: 200px;
   overflow: hidden;
   background: url("/images/svg/homeCloudsBottom.svg") top center no-repeat;
 }
 
 #nick-image-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
   height: 200px;
   img {
-    position: absolute;
-    top: -250px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 370px;
+    transform: translateY(-75%);
+    @media (max-width: 399.98px) {
+      max-width: 80%;
+      transform: translateY(-55%);
+    }
   }
 }
 

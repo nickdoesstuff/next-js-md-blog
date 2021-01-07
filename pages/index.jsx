@@ -22,32 +22,35 @@ export default function Home({ portfolioItems }) {
           content="Hi, I'm Nick Shelton - I design and code experiences that users ❤. I'm currently looking for a long term relationship with a great company. Until then, I'm happy to mingle if you have an exciting or challenging project and need a nerd on your team."
         />
       </Head>
-      {/* Top Tag Line */}
-      <HomePageHero />
+      <div className="HomePage">
+        <div id="TopClouds"></div>
+        {/* Top Tag Line */}
+        <HomePageHero />
 
-      {/* Clouds Behind Hero */}
-      <HomePageTopClouds />
+        {/* Clouds Behind Hero */}
+        <HomePageTopClouds />
 
-      {/* Cartoon Character */}
-      <HomePageNickIllustration />
+        {/* Cartoon Character */}
+        <HomePageNickIllustration />
 
-      {/* About info below Cartoon - includes extra bottom spacer */}
-      <HomePageAboutNick />
+        {/* About info below Cartoon - includes extra bottom spacer */}
+        <HomePageAboutNick />
 
-      {/* 3 column skills table */}
-      <HomePageSkills />
+        {/* 3 column skills table */}
+        <HomePageSkills />
 
-      {/* portfolio & cards */}
-      <HomePagePortfolio portfolioItems={portfolioItems} />
+        {/* portfolio & cards */}
+        <HomePagePortfolio portfolioItems={portfolioItems} />
 
-      {/* Presentation, spacer div + cards */}
-      <HomePageConferencePresentations />
+        {/* Presentation, spacer div + cards */}
+        <HomePageConferencePresentations />
 
-      {/* Blog Section */}
-      <HomePageBlogSection />
+        {/* Blog Section */}
+        <HomePageBlogSection />
 
-      {/* Project call to action */}
-      <HomePageProjectCTA />
+        {/* Project call to action */}
+        <HomePageProjectCTA />
+      </div>
     </>
   );
 }

@@ -16,15 +16,17 @@ const TopNav = () => {
     setPage(pathname);
   }, [pathname]);
 
-  const [mobileNavOpen, setMobileNavOpen] = React.useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = React.useState("");
 
   const openNav = () => {
     document.querySelector("body").classList.add("nav-open");
-    setMobileNavOpen(true);
+    setMobileNavOpen("opening");
+    setTimeout(() => setMobileNavOpen("isOpen"), 1);
   };
   const closeNav = () => {
     document.querySelector("body").classList.remove("nav-open");
-    setMobileNavOpen(false);
+    setMobileNavOpen("closing");
+    setTimeout(() => setMobileNavOpen(""), 200);
   };
 
   //scrolls to top when passed path current page
@@ -49,9 +51,7 @@ const TopNav = () => {
         </div>
         <div
           onClick={closeNav}
-          className={`TopNav-overlay d-fixed d-md-none ${
-            mobileNavOpen ? "isOpen" : ""
-          }`}
+          className={`TopNav-overlay d-fixed d-md-none ${mobileNavOpen}`}
         ></div>
         <TopNavLinks
           scrollToTop={scrollToTop}
@@ -62,7 +62,7 @@ const TopNav = () => {
           scrollToTop={scrollToTop}
           page={page}
           closeNav={closeNav}
-          className={`d-flex d-md-none mobile ${mobileNavOpen ? "isOpen" : ""}`}
+          className={`d-flex d-md-none mobile ${mobileNavOpen}`}
         />
       </div>
     </nav>

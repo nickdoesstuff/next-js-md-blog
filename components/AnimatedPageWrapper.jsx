@@ -10,7 +10,7 @@ const pageAnimationVariants = {
   start: {
     opacity: 0,
     y: "-50px",
-    height: "110vh",
+    height: "120vh",
   },
   animate: {
     opacity: 1,
@@ -24,7 +24,7 @@ const pageAnimationVariants = {
   exit: {
     opacity: 0,
     y: "-50px",
-    height: "110vh",
+    height: "120vh",
     transition: {
       duration: tDuration,
       delay: eDelay,

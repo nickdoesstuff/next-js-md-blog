@@ -1,11 +1,14 @@
 import Link from "next/link";
 import SiteFooterCraftedBy from "./SiteFooterCraftedBy";
 
-const TopNavLinks = ({ className, page, closeNav }) => {
+const TopNavLinks = ({ className, page, closeNav, scrollToTop }) => {
   return (
     <div onClick={closeNav} className={`TopNav-links ml-auto ${className}`}>
       <ul className="navbar-nav">
-        <li className={`nav-item ${page === "/" ? "active" : ""}`}>
+        <li
+          onClick={() => scrollToTop("/")}
+          className={`nav-item ${page === "/" ? "active" : ""}`}
+        >
           <Link href="/">
             <a className="nav-link">
               <i className="fas fa-home d-inline-block mr-3 d-md-none"></i>
@@ -14,6 +17,7 @@ const TopNavLinks = ({ className, page, closeNav }) => {
           </Link>
         </li>
         <li
+          onClick={() => scrollToTop("/portfolio")}
           className={`nav-item ${page.includes("/portfolio") ? "active" : ""}`}
         >
           <Link href="/portfolio">
@@ -23,7 +27,10 @@ const TopNavLinks = ({ className, page, closeNav }) => {
             </a>
           </Link>
         </li>
-        <li className={`nav-item ${page.includes("/blog") ? "active" : ""}`}>
+        <li
+          onClick={() => scrollToTop("/blog")}
+          className={`nav-item ${page.includes("/blog") ? "active" : ""}`}
+        >
           <Link href="/blog">
             <a className="nav-link">
               <i className="fas fa-book d-inline-block mr-3 d-md-none"></i>

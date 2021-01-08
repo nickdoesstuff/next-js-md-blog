@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 const TopNav = () => {
   const { pathname } = useRouter();
 
-  const [page, setPage] = useState("home");
+  const [page, setPage] = useState("/");
 
   useEffect(() => {
     setPage(pathname);
@@ -27,10 +27,11 @@ const TopNav = () => {
     setMobileNavOpen(false);
   };
 
-  const scrollToTop = () => {
+  //scrolls to top when passed path current page
+  //if you don't pass a pathToMatch, it always scrolls
+  const scrollToTop = (pathToMatch) => {
     const elementToScroll = document.querySelector(".AnimatedPageWrapper");
-    if (page === "/") {
-      console.log("home");
+    if (page === pathToMatch || !pathToMatch) {
       animateScrollTo(0, { elementToScroll, maxDuration: 1000 });
     }
   };
@@ -39,7 +40,7 @@ const TopNav = () => {
     <nav className="TopNav navbar navbar-inverse navbar-expand fixed-top shadow-sm">
       <div className="container">
         <Link href="/">
-          <a onClick={scrollToTop} className="navbar-brand">
+          <a onClick={() => scrollToTop("/")} className="navbar-brand">
             <GlassesLogo />
           </a>
         </Link>
@@ -52,8 +53,13 @@ const TopNav = () => {
             mobileNavOpen ? "isOpen" : ""
           }`}
         ></div>
-        <TopNavLinks page={page} className={"d-none d-md-flex desktop"} />
         <TopNavLinks
+          scrollToTop={scrollToTop}
+          page={page}
+          className={"d-none d-md-flex desktop"}
+        />
+        <TopNavLinks
+          scrollToTop={scrollToTop}
           page={page}
           closeNav={closeNav}
           className={`d-flex d-md-none mobile ${mobileNavOpen ? "isOpen" : ""}`}

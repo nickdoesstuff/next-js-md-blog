@@ -5,6 +5,7 @@ import PageProgress from "../components/site/PageProgress";
 import { AnimatePresence } from "framer-motion";
 
 import "../styles/_app.scss";
+import ScrollToTopButton from "../components/site/ScrollToTopButton";
 
 const App = ({ Component, pageProps, router }) => {
   return (
@@ -16,6 +17,7 @@ const App = ({ Component, pageProps, router }) => {
           <Component {...pageProps} />
         </AnimatedPageWrapper>
       </AnimatePresence>
+      <ScrollToTopButton />
     </>
   );
 };

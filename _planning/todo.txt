@@ -1,8 +1,16 @@
 x fix iphone page bottom scroll issue
 x fix nav mobile built with overlay issue
 x fix glasses cutoff on mobile
-add global scroll to top button
+x add global scroll to top button
+create 404 placeholder component
+use 404 placeholder component on coming-soon portfolio pages
+create blog landing page (copy portfolio page)
+use 404 placeholder componenet in the blog page
+make sure appropriate padding is on all current pages.
+
+make blog page "under construction"
 create favicon that matches
+figure out lottie heart + intereactivity
 push code live
 run lighthouse and determine fixes I can make
 add google analytics

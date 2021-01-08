@@ -22,7 +22,7 @@ export default function Home({ portfolioItems }) {
           content="Hi, I'm Nick Shelton - I design and code experiences that users ❤. I'm currently looking for a long term relationship with a great company. Until then, I'm happy to mingle if you have an exciting or challenging project and need a nerd on your team."
         />
       </Head>
-      <div className="HomePage">
+      <div id="HomePage">
         <div id="TopClouds"></div>
         {/* Top Tag Line */}
         <HomePageHero />

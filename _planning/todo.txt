@@ -1,6 +1,7 @@
 x fix iphone page bottom scroll issue
 x fix nav mobile built with overlay issue
-fix glasses cutoff on mobile
+x fix glasses cutoff on mobile
+add global scroll to top button
 create favicon that matches
 push code live
 run lighthouse and determine fixes I can make

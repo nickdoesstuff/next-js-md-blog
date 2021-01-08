@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import GlassesLogo from "../logos/GlassesLogo";
 import TopNavLinks from "./TopNavLinks";
-
-import animateScrollTo from "animated-scroll-to";
+import { scrollToTop } from "../../lib/scrollToTop";
 
 import { useRouter } from "next/router";
 
@@ -29,20 +28,15 @@ const TopNav = () => {
     setTimeout(() => setMobileNavOpen(""), 200);
   };
 
-  //scrolls to top when passed path current page
-  //if you don't pass a pathToMatch, it always scrolls
-  const scrollToTop = (pathToMatch) => {
-    const elementToScroll = document.querySelector(".AnimatedPageWrapper");
-    if (page === pathToMatch || !pathToMatch) {
-      animateScrollTo(0, { elementToScroll, maxDuration: 1000 });
-    }
+  const handleScroll = (pathToMatch) => {
+    if (pathToMatch === pathname) scrollToTop();
   };
 
   return (
     <nav className="TopNav navbar navbar-inverse navbar-expand fixed-top shadow-sm">
       <div className="container">
         <Link href="/">
-          <a onClick={() => scrollToTop("/")} className="navbar-brand">
+          <a onClick={() => handleScroll("/")} className="navbar-brand">
             <GlassesLogo />
           </a>
         </Link>
@@ -54,12 +48,12 @@ const TopNav = () => {
           className={`TopNav-overlay d-fixed d-md-none ${mobileNavOpen}`}
         ></div>
         <TopNavLinks
-          scrollToTop={scrollToTop}
+          handleScroll={handleScroll}
           page={page}
           className={"d-none d-md-flex desktop"}
         />
         <TopNavLinks
-          scrollToTop={scrollToTop}
+          handleScroll={handleScroll}
           page={page}
           closeNav={closeNav}
           className={`d-flex d-md-none mobile ${mobileNavOpen}`}

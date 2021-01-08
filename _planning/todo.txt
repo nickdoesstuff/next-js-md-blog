@@ -2,13 +2,16 @@ x fix iphone page bottom scroll issue
 x fix nav mobile built with overlay issue
 x fix glasses cutoff on mobile
 x add global scroll to top button
-create 404 placeholder component
-use 404 placeholder component on coming-soon portfolio pages
-create blog landing page (copy portfolio page)
-use 404 placeholder componenet in the blog page
-make sure appropriate padding is on all current pages.
+x create 404 placeholder component
+x use 404 placeholder component on coming-soon portfolio pages
+x use 404 placeholder componenet in the blog page
+x make sure appropriate padding is on all current pages.
+x make blog page "under construction"
 
-make blog page "under construction"
+fixScrolling bounding box
+create a hoverwrapper component, use scrolltotop as moddel
+
+
 create favicon that matches
 figure out lottie heart + intereactivity
 push code live

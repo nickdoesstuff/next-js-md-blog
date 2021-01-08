@@ -11,7 +11,7 @@ const SiteFooterCraftedBy = () => {
           Handcrafted by Nick in {new Date().getFullYear()}
         </p>
         <div className="row">
-          <div className="col-12 offset-0 rounded col-md-4 offset-md-4 bg-light pb-3 text-dark">
+          <div className="BuiltUsing col-12 offset-0 rounded col-md-4 offset-md-4 bg-light pb-3 text-dark">
             <div id="Site_Footer-built-with-text">
               Built with <HeartIcon scale={0.6} /> using:
             </div>

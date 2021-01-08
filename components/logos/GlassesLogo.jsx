@@ -2,14 +2,14 @@ const GlassesLogo = ({
   color = "#611ee6",
   scale = 1,
   width = 127.201,
-  height = 42.7,
+  height = 43,
 }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={width * scale}
       height={height * scale}
-      viewBox="0 0 127.201 42.7"
+      viewBox={`0 0 ${width} ${height}`}
     >
       <path
         id="_6"

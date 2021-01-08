@@ -1,7 +1,10 @@
-x Update page top padding
-x Update responsive size of text on home screen
-x Add clouds to top
-x Refactor navbar to have 2 versions of links
+x fix iphone page bottom scroll issue
+x fix nav mobile built with overlay issue
+see if you can fix smooth scroll on iphone
+create favicon that matches
+push code live
+run lighthouse and determine fixes I can make
+add google analytics
 see if you can make glasses vector render better on small screens
 Update Nick illustration to have other icons
 Do something fun with heart icon.

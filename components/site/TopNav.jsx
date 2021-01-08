@@ -3,6 +3,8 @@ import Link from "next/link";
 import GlassesLogo from "../logos/GlassesLogo";
 import TopNavLinks from "./TopNavLinks";
 
+import animateScrollTo from "animated-scroll-to";
+
 import { useRouter } from "next/router";
 
 const TopNav = () => {
@@ -26,8 +28,10 @@ const TopNav = () => {
   };
 
   const scrollToTop = () => {
+    const elementToScroll = document.querySelector(".AnimatedPageWrapper");
     if (page === "/") {
-      document.querySelector(".AnimatedPageWrapper").scrollTop = 0;
+      console.log("home");
+      animateScrollTo(0, { elementToScroll, maxDuration: 1000 });
     }
   };
 

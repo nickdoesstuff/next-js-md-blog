@@ -30,15 +30,8 @@ const pageAnimationVariants = {
 };
 
 const AnimatedPageWrapper = ({ page, children }) => {
-  // React.useEffect(() => {
-  //   const newPage = document.getElementById(`PageWrapper-${page}`);
-  //   const newPageHeight = newPage.clientHeight;
-  //   document.body.style.height = `${newPageHeight}px`;
-  // }, [page]);
-
   return (
     <motion.div
-      // id={`AnimatedPageWrapper-${page}`}
       className="AnimatedPageWrapper"
       key={page}
       initial="start"

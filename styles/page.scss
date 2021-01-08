@@ -31,14 +31,14 @@ body.nav-open {
 }
 
 .AnimatedPageWrapper {
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;inter
   position: absolute;
   padding-top: 140px;
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
 }

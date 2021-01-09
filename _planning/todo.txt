@@ -8,14 +8,24 @@ x use 404 placeholder componenet in the blog page
 x make sure appropriate padding is on all current pages.
 x make blog page "under construction"
 
-fixScrolling bounding box
+
+move PageProgress into the animation container object so there's a new one on each page
+adjust the code to add/remove event listeners on mount
+
 create a hoverwrapper component, use scrolltotop as moddel
 
+Do the smaller logos on the nick image, add some animation or something.
+
+Do something fun with the heartbeat
 
 create favicon that matches
-figure out lottie heart + intereactivity
+
 push code live
+
 run lighthouse and determine fixes I can make
+
+
+
 add google analytics
 see if you can make glasses vector render better on small screens
 Update Nick illustration to have other icons

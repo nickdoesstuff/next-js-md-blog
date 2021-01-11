@@ -5,6 +5,7 @@ import TopNavLinks from "./TopNavLinks";
 import { scrollToTop } from "../../lib/scrollToTop";
 
 import { useRouter } from "next/router";
+import HoverItem from "../hoc/HoverItem";
 
 const TopNav = () => {
   const { pathname } = useRouter();
@@ -37,7 +38,9 @@ const TopNav = () => {
       <div className="container">
         <Link href="/">
           <a onClick={() => handleScroll("/")} className="navbar-brand">
-            <GlassesLogo />
+            <HoverItem>
+              <GlassesLogo />
+            </HoverItem>
           </a>
         </Link>
         <div onClick={openNav} className="TopNav-hamburger">

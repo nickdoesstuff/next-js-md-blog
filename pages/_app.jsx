@@ -9,7 +9,7 @@ import "../styles/_app.scss";
 
 const defaultScrollState = {
   amount: 0,
-  enabled: false,
+  enabled: true,
 };
 
 const App = ({ Component, pageProps, router }) => {
@@ -34,7 +34,8 @@ const App = ({ Component, pageProps, router }) => {
 
   return (
     <>
-      <PageProgress scrollPercent={scroll.amount} />
+      <PageProgress scrollPercent={scroll.enabled ? scroll.amount : 0} />
+
       <TopNav />
       <AnimatePresence initial={false}>
         <AnimatedPageWrapper

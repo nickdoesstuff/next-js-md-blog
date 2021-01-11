@@ -9,9 +9,6 @@ x make sure appropriate padding is on all current pages.
 x make blog page "under construction"
 
 
-move PageProgress into the animation container object so there's a new one on each page
-adjust the code to add/remove event listeners on mount
-
 create a hoverwrapper component, use scrolltotop as moddel
 
 Do the smaller logos on the nick image, add some animation or something.

@@ -11,8 +11,8 @@ const PortfolioPage = ({ portfolioItems }) => {
         <div className="row">
           <div className="col-12 offset-0 col-lg-8 offset-lg-2">
             <h5 class="subtitle">
-              Check out some of my work below. Feel free to filter based on what
-              you're interested in.
+              Check out some of my work below. This site is a work in progress
+              so check back soon for more items &amp; filterable samples.
             </h5>
           </div>
         </div>
@@ -21,13 +21,6 @@ const PortfolioPage = ({ portfolioItems }) => {
           {portfolioItems.map((item) => (
             <LinkCard key={item._id} card={item} />
           ))}
-        </div>
-        <div className="row mb-5">
-          <div className="col text-center">
-            <Link href="/portfolio">
-              <a className="btn btn-outline-primary">See Full Portfolio</a>
-            </Link>
-          </div>
         </div>
         <div className="row">
           <div className="col text-center">

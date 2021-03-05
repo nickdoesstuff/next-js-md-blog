@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const HomePageBlogSection = () => {
   return (
-    <section id="HomePage-blog" className="container-fluid mb-5 pb-5">
-      <div className="container mb-3 pb-5">
+    <section id="HomePage-blog" className="container-fluid pt-5 mt-5 mb-5 pb-5">
+      <div className="container mb-5 mt-5 pb-5">
         <div className="row text-center">
           <div className="col-12 offset-0 col-md-8 offset-md-2 px-4">
             <h3>
@@ -14,7 +14,7 @@ const HomePageBlogSection = () => {
               and will add old and new posts soon. Check back soon!
             </p>
             <Link href="/blog">
-              <a className="btn btn-outline-primary">Read Blog</a>
+              <a className="btn btn-outline-primary mb-4">Read Blog</a>
             </Link>
           </div>
         </div>

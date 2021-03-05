@@ -10,9 +10,9 @@ const HomePagePortfolio = ({ portfolioItems }) => {
     >
       <div className="container text-center">
         <h3>Project Work</h3>
-        <h5 class="subtitle">
-          I've worked on so many things over the years... Here are a few cool
-          ones.
+        <h5 className="subtitle">
+          I've worked on so many things over the years... Here is some cool
+          stuff I did for clients.
         </h5>
         <div className="row mt-5 pt-3 mb-5">
           {/* map over hope page portfolioItems */}

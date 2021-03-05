@@ -57,9 +57,9 @@ const AnimatedPageWrapper = ({ page, children, onScroll }) => {
     };
   }, []);
 
-  React.useEffect(() => {
-    console.log(page);
-  }, [page]);
+  // React.useEffect(() => {
+  //   console.log(page);
+  // }, [page]);
 
   return (
     <>

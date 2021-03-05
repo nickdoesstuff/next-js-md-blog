@@ -3,13 +3,16 @@ const HeartIcon = ({
   height = 28.567,
   scale = 1,
   color = "#dc3545",
+  style = {},
 }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={width * scale}
       height={height * scale}
+      viewBox={`0 0 ${width * scale} ${height * scale}`}
       viewBox="0 0 30.849 28.567"
+      style={style}
     >
       <path
         id="Icon_metro-heart"

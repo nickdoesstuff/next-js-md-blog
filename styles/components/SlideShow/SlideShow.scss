@@ -1,0 +1,103 @@
+.SlideShow {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: $dark;
+  display: flex;
+
+  &-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &-item {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+  }
+
+  &-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img.wide {
+      width: 80%;
+      max-width: 1000px;
+    }
+    img.tall {
+      height: 80%;
+      max-height: 800px;
+    }
+  }
+
+
+  &-background {
+    position: absolute;
+    overflow: hidden;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;
+    // filter: blur(10px);
+  }
+
+  &-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    font-size: 40px;
+
+    button {
+      background: none;
+      border: none;
+      color: $white;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY("-50%");
+      opacity: 0.7;
+      transition: 0.3s ease-in-out;
+      outline: none;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.fa-arrow-circle-right {
+        right: 10px;
+      }
+      &.fa-arrow-circle-left {
+        left: 10px;
+      }
+
+      &[disabled] {
+        cursor: not-allowed;
+        opacity: 0.1;
+      }
+    }
+  }
+}

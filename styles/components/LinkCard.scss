@@ -4,6 +4,7 @@
   margin: 0 auto 2em auto;
   cursor: pointer;
   max-width: 450px;
+  text-align: center;
 
   .card {
     position: relative;
@@ -45,6 +46,7 @@
       }
       img {
         max-height: 120px;
+        max-width: 250px;
       }
     }
 

@@ -3,34 +3,19 @@ import TopNav from "../components/site/TopNav";
 import AnimatedPageWrapper from "../components/AnimatedPageWrapper";
 import ScrollToTopButton from "../components/site/ScrollToTopButton";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { AnimatePresence } from "framer-motion";
 
 import "../styles/_app.scss";
 
-const defaultScrollState = {
-  amount: 0,
-  enabled: true,
-};
+import SlideShow from "../components/slideshow/SlideShow";
+import UseScroll from "../hooks/useScroll";
 
 const App = ({ Component, pageProps, router }) => {
-  //used to set state of ScrollAmount
-  const [scroll, setScroll] = React.useState(defaultScrollState);
-
-  const handleScroll = (percentOfPageScrolled) => {
-    if (scroll.enabled) {
-      setScroll((prevState) => {
-        return {
-          amount: percentOfPageScrolled,
-          enabled: prevState.enabled,
-        };
-      });
-    }
-  };
-
-  React.useEffect(() => {
-    setScroll({ enabled: false, amount: 0 });
-    setTimeout(() => setScroll({ enabled: true, amount: 0 }), 500);
-  }, [router.route]);
+  // handle page scroll bar at the top
+  const [scroll, handleScroll] = UseScroll(router.route);
 
   return (
     <>
@@ -47,6 +32,8 @@ const App = ({ Component, pageProps, router }) => {
         </AnimatedPageWrapper>
       </AnimatePresence>
       <ScrollToTopButton />
+      {/* <div id="image-gallery"></div> */}
+      {/* <SlideShow /> */}
     </>
   );
 };

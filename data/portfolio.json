@@ -1,62 +1,81 @@
 [
     {
         "_id": "ddb9da7e-5031-11eb-ae93-0242ac130002",
-        "title": "Dormakaba Market Masters",
+        "title": "dormakaba Market Masters",
+        "lead": "dormakaba Market Masters is a mobile-first responsive game engine built to give dormakaba employees training on new branding nomenclature. dormakaba utilized the project to fulfill many business goals such as the delivery of training on changing brand nomenclature to dormakaba employees, testing the efficacy and desire for mobile-based training within the dormakaba organization, and to examine the motivation of employees to participate in game-based training.",
         "description": "Mobile-first responsive game built to give dormakaba employees training on new branding nomeclature.",
         "bgImage": "/images/pages/portfolio/dormakaba_bg.jpg",
         "image": "/images/pages/portfolio/logos/dormakaba_white_red.png",
+        "color": "#0E3982",
         "href": "/portfolio/dormakaba-market-masters-app",
+        "tech": ["react", "sass", "xd", "ps", "ga", "sheets"],
+        "roles": ["tech", "software", "ux/ui", "graphics"],
         "tags": ["home"]
     },
     
     {
         "_id": "ddb9da7e-5031-11eb-ae93-asf23423434",
         "title": "Lilly Marketing Studios",
-        "description": "DESCRIPTION",
+        "lead": "Lilly Marketing Studios is an interactive proccess guide and resource portal that allowed Eli Lilly to significantly reduce intenral marketing budgets. Over 26 different job functions at Lilly utilize the tool daily to get marketing work done.",
+        "description": "Lilly Marketing Studios is an interactive proccess guide and resource portal that allowed Eli Lilly to significantly reduce intenral marketing budgets.",
         "bgImage": "/images/pages/portfolio/lilly_bg.jpg",
         "image": "/images/pages/portfolio/logos/lilly_white.png",
         "color": "#C61425",
         "href": "/portfolio/lilly-marketing-studios-app",
+        "tech": ["jquery", "less", "ai", "ps", "excel"],
+        "roles": ["tech", "software", "pm", "qa", "ux/ui", "graphics"],
+        "tags": ["home"]
+    },
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-2342397asdf",
+        "title": "Various Roche Apps",
+        "lead": "I've made approximately 100+ little websites and apps for Roche over the years. Some are training tools, some are resource libraries, and some are simple games.",
+        "description": "I've made approximately 100+ little websites and apps for Roche over the years. Some are training tools, some are resource libraries, and some are simple games.",
+        "bgImage": "/images/pages/portfolio/roche_bg.jpg",
+        "image": "/images/pages/portfolio/logos/roche_white.png",
+        "color": "#2B81DD",
+        "href": "/portfolio/various-roche-diagnostics-apps",
+        "tech": ["jquery", "backbone","angular","less",  "sass",  "ps", "ai", "xd"],
+        "roles": ["tech", "software", "ux/ui", "pm", "qa", "graphics"],
+        "tags": ["home"]
+    },
+    {
+        "_id": "ddb9da7e-5031-11eb-ae93-234asfas087",
+        "title": "Johns Hopkins University Resource Library",
+        "lead": "The Digital Magazine product I developed for Bottom-Line Performance was a perfect fit to be used as a training library for Johns Hopkins University.",
+        "description": "The Digital Magazine product I developed for Bottom-Line Performance was a perfect fit to be used as a training library for Johns Hopkins University.",
+        "bgImage": "/images/pages/portfolio/jh_bg.jpg",
+        "image": "/images/pages/portfolio/logos/johns_hopkins_white.png",
+        "color": "#FFC107",
+        "href": "/portfolio/johns-hopkins-university-emag",
+        "tech": ["jquery", "backbone","less", "ps", "ai"],
+        "roles": ["tech", "software", "ux/ui", "graphics"],
         "tags": ["home"]
     },
     {
         "_id": "ddb9da7e-5031-11eb-ae93-9873hoasdfas",
         "title": "Leadership Training App",
-        "description": "DESCRIPTION",
+        "lead": "The Leadership Training Applicaiton was developed as a micro learning platform to allow managers & directors at Spectrum to get training content on the fly via the convenience of their mobile devices.",
+        "description": "The Leadership Training Applicaiton was developed as a micro learning platform to allow managers & directors at Spectrum to get training content on the fly via the convenience of their mobile devices.",
         "bgImage": "/images/pages/portfolio/spectrum_bg.jpg",
         "image": "/images/pages/portfolio/logos/spectrum_white.png",
         "color": "#17A2B8",
         "href": "/portfolio/spectrum-leadership-training-app",
+        "tech": ["react", "sass", "xd", "ps", "ga", "sheets"],
+        "roles": ["tech", "software", "ux/ui", "graphics"],
         "tags": ["home"]
     },
     {
         "_id": "ddb9da7e-5031-11eb-ae93-2342397afsdf",
-        "title": "TITLE",
-        "description": "DESCRIPTION",
+        "title": "Cummins IAP Digigtal Resource eMag",
+        "lead": "The Digital Magazine product I developed for Bottom-Line Performance was a perfect fit for Cummins Information Assset Protection Training content.",
+        "description": "The Digital Magazine product I developed for Bottom-Line Performance was a perfect fit for Cummins Information Assset Protection Training content.",
         "bgImage": "/images/pages/portfolio/cummins_bg.jpg",
         "image": "/images/pages/portfolio/logos/cummins_white.png",
         "color": "#C31627",
-        "href": "/portfolio/rebrandable-emag-for-various-clients",
-        "tags": ["home"]
-    },
-    {
-        "_id": "ddb9da7e-5031-11eb-ae93-234asfas087",
-        "title": "TITLE",
-        "description": "DESCRIPTION",
-        "bgImage": "/images/pages/portfolio/jh_bg.jpg",
-        "image": "/images/pages/portfolio/logos/johns_hopkins_white.png",
-        "color": "#FFC107",
-        "href": "/portfolio/rebrandable-emag-for-various-clients",
-        "tags": ["home"]
-    },
-    {
-        "_id": "ddb9da7e-5031-11eb-ae93-2342397asdf",
-        "title": "TITLE",
-        "description": "DESCRIPTION",
-        "bgImage": "/images/pages/portfolio/roche_bg.jpg",
-        "image": "/images/pages/portfolio/logos/roche_white.png",
-        "color": "#2B81DD",
-        "href": "/portfolio/rebrandable-emag-for-various-clients",
+        "href": "/portfolio/cummins-information-asset-protection-emag",
+        "tech": ["jquery", "backbone","less", "ps", "ai"],
+        "roles": ["tech", "software", "ux/ui", "graphics"],
         "tags": ["home"]
     }
 ]

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 390 512" style="enable-background:new 0 0 390 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#59C36A;}
+	.st1{fill:#00A66C;}
+	.st2{fill:#FFF5F5;}
+	.st3{fill:#E3E7EA;}
+	.st4{fill:#A0DEB0;}
+</style>
+<g>
+	<g id="Sheet_2_">
+		<g>
+			<g>
+				<g>
+					<g>
+						<g>
+							<path class="st0" d="M390,135l-105-30L255,0H30C13.4,0,0,13.4,0,30v452c0,16.6,13.4,30,30,30h330c16.6,0,30-13.4,30-30V135z"
+								/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<g id="Sheet_3_">
+				<g>
+					<g>
+						<path class="st1" d="M390,135v347c0,16.6-13.4,30-30,30H197.4V0H255l30,105L390,135z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	<path class="st2" d="M285,211H105c-8.3,0-15,6.7-15,15v180c0,8.3,6.7,15,15,15h180c8.3,0,15-6.7,15-15V226
+		C300,217.7,293.3,211,285,211z M120,301h60v30h-60V301z M210,301h60v30h-60V301z M270,271h-60v-30h60V271z M180,241v30h-60v-30H180
+		z M120,361h60v30h-60V361z M210,391v-30h60v30H210z"/>
+	<path class="st3" d="M285,211h-87.6v210H285c8.3,0,15-6.7,15-15V226C300,217.7,293.3,211,285,211z M270,391h-60v-30h60V391z
+		 M270,331h-60v-30h60V331z M270,271h-60v-30h60V271z"/>
+	<path class="st4" d="M390,135H285c-16.5,0-30-13.5-30-30V0c3.9,0,7.8,1.5,10.5,4.5l120,120C388.5,127.2,390,131.1,390,135z"/>
+</g>
+</svg>

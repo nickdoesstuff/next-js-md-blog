@@ -10,7 +10,7 @@ const PortfolioPage = ({ portfolioItems }) => {
         <h3>Portfoilo Work</h3>
         <div className="row">
           <div className="col-12 offset-0 col-lg-8 offset-lg-2">
-            <h5 class="subtitle">
+            <h5 className="subtitle">
               Check out some of my work below. This site is a work in progress
               so check back soon for more items &amp; filterable samples.
             </h5>

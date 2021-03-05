@@ -28,7 +28,6 @@ const PortfolioPage = ({ portfolioItem }) => {
                 autoPlay
                 loop
                 muted
-                lazy
                 controls
               ></video>
               This app was developed utilizing primarily with jQuery and built
@@ -96,7 +95,6 @@ const PortfolioPage = ({ portfolioItem }) => {
                 autoPlay
                 loop
                 muted
-                lazy
                 controls
               ></video>
               This app was developed utilizing primarily with jQuery and built
@@ -146,7 +144,6 @@ const PortfolioPage = ({ portfolioItem }) => {
                 autoPlay
                 loop
                 muted
-                lazy
                 controls
               ></video>
               This app was developed utilizing primarily with jQuery and jQuery
@@ -187,7 +184,6 @@ const PortfolioPage = ({ portfolioItem }) => {
                 autoPlay
                 loop
                 muted
-                lazy
                 controls
               ></video>
               This app was developed utilizing primarily Backbone and jQuery and
@@ -223,7 +219,6 @@ const PortfolioPage = ({ portfolioItem }) => {
                 autoPlay
                 loop
                 muted
-                lazy
                 controls
               ></video>
               This app was built using jQuery and LESS and I hesitate to even

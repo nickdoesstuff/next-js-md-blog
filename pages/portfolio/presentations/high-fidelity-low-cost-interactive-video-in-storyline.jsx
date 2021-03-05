@@ -19,6 +19,7 @@ function SimpleSlider() {
   for (let i = 1; i <= numSlides; i++) {
     slides.push(
       <img
+        key={i}
         src={`/images/pages/presentations/Storyline/Slide${i}.JPG`}
         alt={`slide ${i}`}
       />

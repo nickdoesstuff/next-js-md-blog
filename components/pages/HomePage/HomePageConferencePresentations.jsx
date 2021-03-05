@@ -11,7 +11,7 @@ const presentations = [
     bgImage: "/images/pages/presentations/360.jpg",
     image: "/images/pages/presentations/360_logo.png",
     color: "#542f9e",
-    href: "portfolio/presentations/360-degrees-of-separation",
+    href: "/portfolio/presentations/360-degrees-of-separation",
   },
 
   {
@@ -22,7 +22,7 @@ const presentations = [
     bgImage: "/images/pages/presentations/hype.jpg",
     image: "/images/pages/presentations/tech_logo.png",
     color: "#836409",
-    href: "portfolio/presentations/promise-vs-hype",
+    href: "/portfolio/presentations/promise-vs-hype",
     tech: ["react", "sass", "xd", "ps", "ga", "sheets"],
     roles: ["tech", "software", "ux/ui", "graphics"],
     tags: ["home"],
@@ -36,7 +36,7 @@ const presentations = [
     image: "/images/pages/presentations/storyline_logo.png",
     color: "#45179f",
     href:
-      "portfolio/presentations/high-fidelity-low-cost-interactive-video-in-storyline",
+      "/portfolio/presentations/high-fidelity-low-cost-interactive-video-in-storyline",
     tech: ["react", "sass", "xd", "ps", "ga", "sheets"],
     roles: ["tech", "software", "ux/ui", "graphics"],
     tags: ["home"],

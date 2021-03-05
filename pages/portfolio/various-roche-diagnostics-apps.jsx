@@ -29,6 +29,7 @@ const PortfolioPage = ({ portfolioItem }) => {
                 loop
                 muted
                 controls
+                playsInline
               ></video>
               This app was developed utilizing primarily with jQuery and built
               to be loaded into Roche’s enterprise learning management system.
@@ -96,6 +97,7 @@ const PortfolioPage = ({ portfolioItem }) => {
                 loop
                 muted
                 controls
+                playsInline
               ></video>
               This app was developed utilizing primarily with jQuery and built
               to be loaded into Roche’s enterprise learning management system.
@@ -145,6 +147,7 @@ const PortfolioPage = ({ portfolioItem }) => {
                 loop
                 muted
                 controls
+                playsInline
               ></video>
               This app was developed utilizing primarily with jQuery and jQuery
               mobile and built to be loaded into Roche’s enterprise learning
@@ -185,6 +188,7 @@ const PortfolioPage = ({ portfolioItem }) => {
                 loop
                 muted
                 controls
+                playsInline
               ></video>
               This app was developed utilizing primarily Backbone and jQuery and
               built to serve as an information portal for various components of
@@ -220,6 +224,7 @@ const PortfolioPage = ({ portfolioItem }) => {
                 loop
                 muted
                 controls
+                playsInline
               ></video>
               This app was built using jQuery and LESS and I hesitate to even
               show it today. It was built in the days of infancy of mobile web,

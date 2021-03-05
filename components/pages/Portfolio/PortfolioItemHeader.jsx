@@ -34,7 +34,9 @@ const PortfolioItemHeader = ({
             <MyRole roles={roles} />
           </div>
           <div className={videoAreaClasses}>
-            {video && <video src={video} autoPlay loop muted></video>}
+            {video && (
+              <video playsInline src={video} autoPlay loop muted></video>
+            )}
           </div>
         </div>
       </div>

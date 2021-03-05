@@ -8,7 +8,7 @@ const presentations = [
     title: "360° of Separation",
     description:
       "Association of Talent Development International Conference - A presenation on how to use 360° video and web technolgies (including authoring tools) to produce proof-of-concept interactive video.",
-    bgImage: "/images/pages/presentations/360.jpg",
+    bgImage: "/images/pages/presentations/360.JPG",
     image: "/images/pages/presentations/360_logo.png",
     color: "#542f9e",
     href: "/portfolio/presentations/360-degrees-of-separation",
@@ -19,7 +19,7 @@ const presentations = [
     title: "Promise vs Hype",
     description:
       "Association of Talent Development International Conference - A presenation and rubric for evaluating technology prior to large-scale organizational adoption.",
-    bgImage: "/images/pages/presentations/hype.jpg",
+    bgImage: "/images/pages/presentations/hype.JPG",
     image: "/images/pages/presentations/tech_logo.png",
     color: "#836409",
     href: "/portfolio/presentations/promise-vs-hype",
@@ -32,7 +32,7 @@ const presentations = [
     title: "Interactive Video in Articulate Storyline",
     description:
       "Association of Talent Development Central Indiana Chapter Tech Summit Presenation on more effective ways to put together interactive video.",
-    bgImage: "/images/pages/presentations/storyline.jpg",
+    bgImage: "/images/pages/presentations/storyline.JPG",
     image: "/images/pages/presentations/storyline_logo.png",
     color: "#45179f",
     href:
